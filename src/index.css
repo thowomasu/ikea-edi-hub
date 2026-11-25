@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ikea-navy: #0B2545;
+  --color-ikea-yellow: #FBD914;
+  --color-ikea-cream: #F5F3EC;
+  --color-ikea-ink: #1D1D1D;
+  --color-ikea-muted: #5A5A5A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-ikea-cream);
+    color: var(--color-ikea-ink);
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background-color: var(--color-ikea-cream);
+    color: var(--color-ikea-ink);
+    font-family: 'Noto Sans', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
